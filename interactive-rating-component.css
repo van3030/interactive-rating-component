@@ -1,0 +1,205 @@
+.overpass-primaryfonts{
+  font-family: var(--ff-overpass);
+  font-optical-sizing: auto;
+  font-weight: 400-700;
+  font-style: normal;
+}
+:root{                                                                                             
+/*Primary*/
+
+--Orange:hsl(25, 97%, 53%);
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--dirty-White:hsl(0, 0%, 60%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--btn-Dark-Blue:  hsl(213, 19%, 18%);
+--container-DB: hsl(213, 19%, 13%);
+--btn-submit-col: hsl(216, 12%, 12%);
+--rate-box: hsl(213, 19%, 17%);
+--description-col: hsl(217, 12%, 58%);
+
+/*font*/
+
+--fs-par: 15px;
+
+/*font-family*/
+
+--ff-overpass: 'Overpass';
+
+/*font-weight*/
+
+--fw-reg:400;
+--fw-upper-reg:600;
+--fw-bold:700;
+}
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin;0;
+    padding:0;
+}
+img,svg{
+    display:block;
+}
+.attribution{
+    color: white;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--Very-Dark-Blue);
+    flex-direction: column;
+
+}
+/*rating container start*/
+
+.rating-question{
+    color: var(--White);
+    font-family: var(--ff-overpass);
+    margin-bottom: -0.2rem;
+    font-size: 22px;
+    
+}
+.star-container{
+    width: 35px;
+    height:35px;
+    background: var(--btn-Dark-Blue);
+    border-radius:20px;
+    display: flex;
+    padding: 12px;
+    gap: 1rem;
+    margin-bottom: .6rem;
+
+}
+.rating-container{
+    width:100%;
+    max-width:332px;
+    height:332px;
+    background: var(--container-DB);
+    padding: 1.7rem;
+    border-radius: 25px;
+    display: grid;
+
+}
+.feedback-comment{
+    color: var(--Light-Grey);
+    font-size: 12px;
+    line-height: 19px;
+    font-family: var(--ff-overpass);
+    margin-bottom: 1.2rem;
+    
+    
+}
+.btn-rating-section{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5{
+    width:41px;
+    height:41px;
+    background: var(--btn-Dark-Blue);
+    border-radius: 20px;
+    color: var(--dirty-White);
+    border: none;
+    font-weight: var(--fw-bold);
+    margin-right:.6rem;
+}
+
+#btn1.active, #btn2.active, #btn3.active, #btn4.active, #btn5.active{
+    background: var(--Orange);
+    color: var(--Very-Dark-Blue);
+}
+
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    background: var(--Orange);
+    color: var(--btn-submit-col);
+    border: none;
+    padding: .7rem;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: var(--fw-upper-reg);
+    letter-spacing: 2px;
+    width: 17rem;
+    transition-duration: ;
+}
+.btn-submit:hover{
+    background: var(--White);
+    color: var(--btn-submit-col);
+}
+
+button{
+    cursor: pointer;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover{
+    background: var(--White);
+    color: var(--btn-submit-col);
+}
+/*rating container end */
+
+/*thank-you container start*/
+
+.thank-you-container{
+    width:100%;
+    max-width:332px;
+    height:332px;
+    background: var(--container-DB);
+    padding: 1.7rem;
+    border-radius: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+}
+.illustration-ty{
+    width: 130px;
+    margin-bottom: 1.7rem;
+    margin-top: .6rem
+}
+.rate-container{
+    padding: 13px 1rem 13px 1rem;
+    height:10px;
+    background: var(--rate-box);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--Orange);
+    margin-bottom: .4rem;
+
+}
+
+.rate-star{
+    font-size: 12px;
+    font-family: var(--ff-overpass);
+    font-weight: var(--fw-reg);
+
+}
+
+h3{
+    font-family: var(--ff-overpass);
+    color: var(--White);
+    font-size: 23px;
+    font-weight: var(--fw-reg);
+    margin-bottom: -4px;
+
+}
+.feedback-description{
+    font-family: var(--ff-overpass);
+    font-size: 12px;
+    color: var(--description-col);
+    line-height: 1.2rem;
+    text-align: center;
+
+}
+/*thank you start end*/

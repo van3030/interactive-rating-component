@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..
+  144,100..900;1,9..144,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&dis
+  play=swap" rel="stylesheet">
+  <link rel="stylesheet" href="interactive-rating-component.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+    
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="rating-container">
+    <div class="star-container">
+      <img src="icon-star.svg"alt="icon-star">
+    </div>
+      <p class="rating-question">How did we do?</p>
+      <p class="feedback-comment">Please let us know how we did with your support  request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        
+  <div class="btn-rating-section">
+      <button id="btn1" onclick="
+      buttonOne();
+        " class="btns">1</button>
+      <button id="btn2" onclick="
+      buttonTwo();
+      "class="btns">2</button>
+      <button id="btn3" onclick="
+      buttonThree();
+      " class="btns">3</button>
+      <button id="btn4" onclick="
+      buttonFour();
+      " class="btns">4</button>
+      <button id="btn5" onclick="
+      buttonFive();
+      " class="btns">5</button>
+   </div>   
+     <button onclick="
+        btnSubmit();
+         " class="btn-submit">SUBMIT</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+     <div class="thank-you-container">
+        <img src="illustration-thank-you.svg" class="illustration-ty" alt="illustration">    
+      <div class="rate-container">
+        <p class="rate-star">You forgot to Select</p>
+      </div>
+
+      <h3>Thank you!</h3>
+
+      <p class="feedback-description"> We appreciate you taking the time to give a rating.<br> If you ever need more support, 
+        don’t hesitate to<br> get in touch!</p>
+  </div>
+  <!-- Thank you state end -->
+   
+   <!--Javascript-->
+   <script>
+    
+   ratingContainer = document.querySelector('.rating-container');
+    tyContainer = document.querySelector('.thank-you-container');
+
+    function btnSubmit() {
+
+       ratingContainer.style.display = 'none';
+       tyContainer.style.display = 'flex';
+
+      
+    };
+
+    
+    btnOne = document.querySelector('#btn1');
+    btnThree= document.querySelector('#btn3');
+    btnTwo= document.querySelector('#btn2');
+    btnFour = document.querySelector('#btn4');
+    btnFive = document.querySelector('#btn5');
+    
+    function buttonOne() {
+      btnOne.style.background = 'var(--Orange)';
+      btnOne.style.color = 'var(--btn-submit-color)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.color = 'var(--dirty-White)';
+      btnThree.style.color = 'var(--dirty-White)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.color = 'var(--dirty-White)';
+      
+      document.querySelector('.rate-star').innerHTML = 'You chose 1 out of 5';
+      //mouseOverOne();
+     // mouseOutOne();
+
+    };
+    
+
+    function buttonTwo() {
+      btnTwo.style.background = 'var(--Orange)';
+      btnTwo.style.color = 'var(--btn-submit-color)';
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnThree.style.color = 'var(--dirty-White)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.color = 'var(--dirty-White)';
+  
+    document.querySelector('.rate-star').innerHTML = 'You chose 2 out of 5';
+    //mouseOverTwo();
+    //mouseOutTwo();
+    };
+    
+    function buttonThree() {
+      btnThree.style.background = 'var(--Orange)';
+      btnThree.style.color = 'var(--btn-submit-color)';
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.color = 'var(--dirty-White)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.color = 'var(--dirty-White)';
+      
+      document.querySelector('.rate-star').innerHTML = 'You chose 3 out of 5';
+     // mouseOverThree();
+      //mouseOutThree();
+    };
+
+    function buttonFour() {
+      btnFour.style.background = 'var(--Orange)';
+      btnFour.style.color = 'var(--btn-submit-color)';
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.color = 'var(--dirty-White)';
+      btnThree.style.color = 'var(--dirty-White)';
+      btnFive.style.color = 'var(--dirty-White)';
+
+     document.querySelector('.rate-star').innerHTML = 'You chose 4 out of 5';
+     //mouseOverFour();
+     //mouseOutFour();
+     };
+
+     function buttonFive() {
+      btnFive.style.background = 'var(--Orange)';
+      btnFive.style.color = 'var(--btn-submit-color)';
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.color = 'var(--dirty-White)';
+      btnThree.style.color = 'var(--dirty-White)';
+      btnFour.style.color = 'var(--dirty-White)';
+   
+      document.querySelector('.rate-star').innerHTML = 'You chose 5 out of 5';
+      //mouseOverFive();
+      //mouseOutFive();
+     };
+     /*function mouseOverOne() {
+      btnTwo.style.background = 'var(--White)';
+      btnTwo.style.color = 'var(--btn-submit-col)';
+      btnThree.style.background = 'var(--White)';
+      btnThree.style.color = 'var(--btn-submit-col)';
+      btnFour.style.background = 'var(--White)';
+      btnFour.style.color = 'var(--btn-submit-col)';
+      btnFive.style.background = 'var(--White)';
+      btnFive.style.color = 'var(--btn-submit-col)';
+    };
+    function mouseOverTwo() {
+      btnOne.style.background = 'var(--White)';
+      btnOne.style.color = 'var(--btn-submit-col)';
+      btnThree.style.background = 'var(--White)';
+      btnThree.style.color = 'var(--btn-submit-col)';
+      btnFour.style.background = 'var(--White)';
+      btnFour.style.color = 'var(--btn-submit-col)';
+      btnFive.style.background = 'var(--White)';
+      btnFive.style.color = 'var(--btn-submit-col)';
+    }
+    function mouseOverThree() {
+      btnOne.style.background = 'var(--White)';
+      btnOne.style.color = 'var(--btn-submit-col)';
+      btnTwo.style.background = 'var(--White)';
+      btnTwo.style.color = 'var(--btn-submit-col)';
+      btnFour.style.background = 'var(--White)';
+      btnFour.style.color = 'var(--btn-submit-col)';
+      btnFive.style.background = 'var(--White)';
+      btnFive.style.color = 'var(--btn-submit-col)';
+    }
+    function mouseOverFour() {
+      btnOne.style.background = 'var(--White)';
+      btnOne.style.color = 'var(--btn-submit-col)';
+      btnTwo.style.background = 'var(--White)';
+      btnTwo.style.color = 'var(--btn-submit-col)';
+      btnThree.style.background = 'var(--White)';
+      btnThree.style.color = 'var(--btn-submit-col)';
+      btnFive.style.background = 'var(--White)';
+      btnFive.style.color = 'var(--btn-submit-col)'
+    }
+    function mouseOverFive() {
+      btnOne.style.background = 'var(--White)';
+      btnOne.style.color = 'var(--btn-submit-col)';
+      btnTwo.style.background = 'var(--White)';
+      btnTwo.style.color = 'var(--btn-submit-col)';
+      btnThree.style.background = 'var(--White)';
+      btnThree.style.color = 'var(--btn-submit-col)';
+      btnFour.style.background = 'var(--White)';
+      btnFour.style.color = 'var(--btn-submit-col)'
+    }
+    function mouseOutOne() {
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.color = 'var(--dirty-White)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.color = 'var(--dirty-Whitel)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.color = 'var(--dirty-White)'
+    }
+    function mouseOutTwo() {
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.color = 'var(--dirty-Whitel)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.color = 'var(--dirty-White)'
+    }
+    function mouseOutThree() {
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.color = 'var(--dirty-Whitel)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.color = 'var(--dirty-White)'
+    }
+    function mouseOutFour() {
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.color = 'var(--dirty-Whitel)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.color = 'var(--dirty-White)';
+      btnFive.style.background = 'var(--btn-Dark-Blue)';
+      btnFive.style.color = 'var(--dirty-White)'
+    }
+    function mouseOutFive() {
+      btnOne.style.background = 'var(--btn-Dark-Blue)';
+      btnOne.style.color = 'var(--dirty-White)';
+      btnTwo.style.background = 'var(--btn-Dark-Blue)';
+      btnTwo.style.color = 'var(--dirty-Whitel)';
+      btnFour.style.background = 'var(--btn-Dark-Blue)';
+      btnFour.style.color = 'var(--dirty-White)';
+      btnThree.style.background = 'var(--btn-Dark-Blue)';
+      btnThree.style.color = 'var(--dirty-White)'
+    }
+    btnOne.addEventListener('mouseover',mouseOverOne);
+    btnOne.addEventListener('mouseout',mouseOutOne);
+    btnTwo.addEventListener('mouseover',mouseOverTwo);
+    btnTwo.addEventListener('mouseout',mouseOutTwo);
+    btnThree.addEventListener('mouseover',mouseOverThree);
+    btnThree.addEventListener('mouseout',mouseOutThree);
+    btnFour.addEventListener('mouseover',mouseOverFour);
+    btnFour.addEventListener('mouseout',mouseOutFour);
+    btnFive.addEventListener('mouseover',mouseOverFive);
+    btnFive.addEventListener('mouseout',mouseOutFive);
+     /*let activeButton = null;
+
+     function buttons(event) {
+       const clickedButton = event.target;
+
+       if(activeButton) {
+        clickedButton.classList.remove('active');
+
+       }
+       clickedButton.classList.add('active');
+      activeButton = clickedButton;
+      ratedStar.innerHTML = `You choose ${clickedButton.value} out of 5`;
+
+    };
+    
+     
+
+     function hoverMouseOn(event) {
+       hoverButton = event.target;
+       if(hoverButton !== activeButton) {
+        hoverButton.style.background = 'var(--White)';
+        hoverButton.style.color = 'var(--btn-submit-col)';
+
+        }
+      }; 
+      function hoverMouseOut() {
+        hoverButtonOut = event.target;
+        if(hoverButtonOut !== activeButton) {
+          hoverButtonOut.style.background = 'var(--btn-Dark-Blue)';
+          hoverButtonOut.style.color = 'var(--dirty-White)';
+          
+        };
+      };
+      
+      function submitBtn() {
+       ratingContainer.style.display = 'none';
+       tyContainer.style.display = 'flex';
+      };
+
+      
+     buttonOne = document.querySelector('#btn1');
+     buttonTwo = document.querySelector('#btn2');
+     buttonThree = document.querySelector('#btn3');
+     buttonFour = document.querySelector('#btn4');
+     buttonFive = document.querySelector('#btn5');
+     ratedStar = document.querySelector('.rate-star');
+     ratingContainer = document.querySelector('.rating-container');
+     tyContainer  = document.querySelector('.thank-you-container');
+
+     buttonOne.addEventListener('click',buttons);
+     buttonTwo.addEventListener('click',buttons);
+     buttonThree.addEventListener('click',buttons);
+     buttonFour.addEventListener('click',buttons);
+     buttonFive.addEventListener('click',buttons);
+  
+
+     buttonOne.addEventListener('mouseover',hoverMouseOn);
+     buttonTwo.addEventListener('mouseover',hoverMouseOn);
+     buttonThree.addEventListener('mouseover',hoverMouseOn);
+     buttonFour.addEventListener('mouseover',hoverMouseOn);
+     buttonFive.addEventListener('mouseover',hoverMouseOn);
+
+     buttonOne.addEventListener('mouseout',hoverMouseOut);
+     buttonTwo.addEventListener('mouseout',hoverMouseOut);
+     buttonThree.addEventListener('mouseout',hoverMouseOut);
+     buttonFour.addEventListener('mouseout',hoverMouseOut);
+     buttonFive.addEventListener('mouseout',hoverMouseOut);*/
+
+    
+
+    
+
+
+
+ </script>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="Ivan" href="#" onclick="
+    if(document.querySelector('.Ivan').innerHTML === 'Ivan Ross E. Reyes') {
+       document.querySelector('.Ivan').innerHTML = 'Very Handsome and Cute';
+   
+      }else if( document.querySelector('.Ivan').innerHTML ==='Very Handsome and Cute') {
+        document.querySelector('.Ivan').innerHTML = 'Ivan Ross E. Reyes';
+
+      };
+ 
+    ">Ivan Ross E. Reyes</a>.
+  </div>
+</body>
+</html>
