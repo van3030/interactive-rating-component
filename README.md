@@ -16,7 +16,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+# Awesome Rating Component 
 
 ## Overview
 
@@ -35,75 +35,55 @@ Users should be able to:
 ![](./RatingComponent-SS/choosingState.png)
 ![](./RatingComponent-SS/tyState.png)
 
-
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/van3030/interactive-rating-component]
+- Live Site URL: [https://van3030.github.io/interactive-rating-component/]
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+-HTML
+-JS
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This challenge is I think the most complicated code that I've do because of the button and the transition of pages(ratingpage to TYpage).
+This challenge deepens my understading of JS DOMS and active selector although I don't use active selector to this challenge but I try hard  and spends so much time using it but it's not succesful cause I can't make the buttons functional when I use active selector, It seems to me that the code is all correct but I still can't work it so I try different approach.This is what the function I want in the button that I can't work it, if I clicked any of the buttons the buttons that I picked will turn the background orange but if I hover the other button it will still turn white from default background.I dont remove the js code that I try to make it work so if you have time you can check it and I will so much appreciated if you explain to me why it's not working.
 
-To see how you can add code snippets, see below:
+And also I learned how to use the pixel perfect extension so it's more pixel accurate than most of my past challenge.so this is all the list of what I learned to this challenge:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+-addEventListener
+-active selector
+-mouseover
+-mouseout
+-DOM
+-IDs tags
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+My goal for now is to know What is the problem of my code when I use active selector, And of course still improve my HTML,CSS and specialy Javascript.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+ -Youtube
+ -AI Gemini
+ -Google
+ -Front end mentor community
+ 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github- [https://github.com/van3030]
+- Frontend Mentor - [https://www.frontendmentor.io/profile/van3030](https://www.frontendmentor.io/profile/yourusername)
+- Facebook - (https://www.facebook.com/ivan.reyes.1000)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+-Bhuvnesh Upadhayay - thanks for the suggestion and advice, I appreciated it!
+-Youtube Coding tutorial Vloggers - Thanks keep up the goodwork.
